@@ -1,0 +1,60 @@
+/* Import a custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.matchup-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: lightgray;
+  width: 70vw;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  font-family: 'Press Start 2P', cursive;
+  border: 10px solid #ccc;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+
+.slot-one {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12%;
+  float: left
+}
+
+.slot-two {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12%;
+  float: right;
+}
+
+#vs-text {
+  font-size: 2.5vw;
+  color:red;
+  text-shadow: 0 0 3px yellow, 0 0 3px yellow, 0 0 3px yellow, 0 0 3px yellow;
+}
+
+#fight-button {
+  cursor: pointer;
+  padding: 5px;
+  width: 5vw;
+  height: 3vh;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #ffcc01;
+}
+
+#fight-button:hover {
+  background-color: #ffba30;
+  box-shadow: 0 0 24px rgba(255, 0, 0, 0.616);
+}

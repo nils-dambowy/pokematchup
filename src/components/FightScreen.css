@@ -1,0 +1,32 @@
+
+#fight-screen {
+    width: 90%;
+    height: 90%;
+    z-index: 2;
+    border-radius: 40px;
+    background-image: url("../assets/fight_image.png");
+    background-size: 95% 95%;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+#right-pokemon-sprite {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    right: 25%;
+    top: 22%;
+    width: 20%;
+    height: 20%;
+}
+
+#left-pokemon-sprite {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 22%;
+    top: 33%;
+    width: 20%;
+    height: 20%;
+}

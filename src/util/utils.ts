@@ -3,10 +3,11 @@ interface Pokemon {
     id: number;
     weight: number;
     sprite: string;
+    backSprite: string;
   }
 
-export async function fetchPokemonData(currentPokemons : Pokemon[], startIndex : number) : Promise<Pokemon[]> {
-    const END_INDEX = startIndex + 50;
+export async function fetchPokemonData(currentPokemons : Pokemon[], startIndex : number, interval : number) : Promise<Pokemon[]> {
+    const END_INDEX = startIndex + interval;
     for (let id = (startIndex + 1); id <= END_INDEX; id++) {
         console.log("id", id);
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
@@ -16,7 +17,8 @@ export async function fetchPokemonData(currentPokemons : Pokemon[], startIndex :
             name: data.name, 
             id: data.id, 
             weight: data.weight, 
-            sprite: data.sprites.front_default 
+            sprite: data.sprites.front_default ,
+            backSprite: data.sprites.back_default
         });
     }
     return currentPokemons;

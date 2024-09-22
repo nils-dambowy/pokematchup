@@ -3,6 +3,8 @@
 
 /* Each Pokémon card */
 .poke-card {
+  height: 80%;
+  width: 80%;
   background-color: #fdf1d4;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -15,6 +17,7 @@
   font-family: 'Press Start 2P', cursive;
   flex: 0 1 calc(25% - 40px); /* Take up 25% width minus gap space for 4 cards per row */
   box-sizing: border-box; /* Ensure padding doesn't affect width */
+  z-index: 1;
 }
 
 /* Hover effect */
@@ -27,7 +30,6 @@
 .poke-card img {
   width: 120px;
   height: 120px;
-  margin-bottom: 15px;
   background-color: #ffffff5d;
   padding: 10px;
   border-radius: 50%;
@@ -48,6 +50,46 @@
   font-size: 12px;
   color: #333;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.slot-container {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.slot-1 {
+  cursor: pointer;
+  border: 2px solid #0d0d0d;
+  border-radius: 25%;
+  height: 4.5vh;
+  width: 4.5vw;
+  background-color: rgba(255, 0, 0, 0.689);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+.slot-1:hover {
+  background-color: rgba(182, 2, 2, 0.689);
+  color: white;
+}
+
+.slot-2 {
+  cursor: pointer;
+  border: 2px solid #0d0d0d;
+  border-radius: 25%;
+  height: 4.5vh;
+  width: 4.5vw;
+  background-color: rgba(0, 0, 255, 0.684);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+.slot-2:hover {
+  background-color: rgba(2, 2, 164, 0.684);
+  color: white;
 }
 
 /* Responsive styling for mobile */

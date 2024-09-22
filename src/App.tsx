@@ -1,8 +1,6 @@
 
 import './App.css'
-import Pokemons from './components/Pokemons'
-import SearchField from './components/SearchField'
-
+import SlotContext from './components/SlotContext'
 function App() {
 
   return (
@@ -10,8 +8,7 @@ function App() {
       <h1 id="title">
         PokéMatchup
       </h1>
-      <SearchField />
-      <Pokemons />
+      <SlotContext />
     </>
   )
 }
