@@ -1,0 +1,22 @@
+#title {
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive; 
+  color: #e53e30; 
+  font-size: 36px; 
+  margin: 20px 0; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  background-color: #fdf1d4; 
+  padding: 15px; 
+  border-radius: 10px; 
+  border: 2px solid #e3a72b; 
+}
+body { 
+  background-color: #fde7b4;
+  background-size: cover; 
+  font-family: 'Arial', sans-serif; 
+  margin: 0; 
+  padding: 0;
+}
+

@@ -1,0 +1,64 @@
+/* Import a custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Each Pokémon card */
+.poke-card {
+  background-color: #fdf1d4;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border: 2px solid #e3a72b;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+  flex: 0 1 calc(25% - 40px); /* Take up 25% width minus gap space for 4 cards per row */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Hover effect */
+.poke-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Pokémon image */
+.poke-card img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+  background-color: #ffffff5d;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pokémon name */
+.poke-card h3 {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #e53e30;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Pokémon ID and weight */
+.poke-card p {
+  font-size: 12px;
+  color: #333;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .poke-card {
+      flex: 0 1 calc(50% - 40px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .poke-card {
+      flex: 0 1 calc(100% - 40px); /* One card per row on very small screens */
+  }
+}
